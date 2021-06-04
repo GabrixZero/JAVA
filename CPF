@@ -1,0 +1,431 @@
+package Hard;
+public class CPF {
+
+    public static void main(String[] args) {
+        //Fake CPF
+        String cpf = ("12345678900");
+        int n = 0, c = 11, zero = 0, one = 1, two = 2, three  = 3, four = 4, five = 5, six = 6, seven = 7, eight = 8,
+                nine = 9, ten = 0, Multi, i = 0, Divi, Digit1 = 0, Digit2 = 0, zero1 = 0, one1 = 0, two1 = 0, three1 = 0, four1 = 0,
+                five1 = 0, six1 = 0, seven1 = 0, eight1 = 0, nine1 = 0, ten1 = 0;
+
+        //the lenght of cpf is bigger than you should put
+        if (cpf.length() != 11) {
+            System.out.println("ERROR 404");
+            System.out.println("YOU CANNOT PUT ANYTHING, JUST NUMBERS");
+        }
+        if (n == 0) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                zero = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                zero = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                zero = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                zero = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                zero = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                zero = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                zero = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                zero = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                zero = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                zero = 9;
+            }
+            n++;
+        }
+        if (n == 1) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                one = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                one = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                one = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                one = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                one = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                one = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                one = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                one = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                one = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                one = 9;
+            }
+            n++;
+        }
+        if (n == 2) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                two = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                two = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                two = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                two = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                two = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                two = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                two = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                two = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                two = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                two = 9;
+            }
+            n++;
+        }
+        if (n == 3) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                three = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                three = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                three = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                three = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                three = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                three = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                three = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                three = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                three = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                three = 9;
+            }
+            n++;
+        }
+        if (n == 4) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                four = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                four = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                four = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                four = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                four = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                four = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                four = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                four = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                four = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                four = 9;
+            }
+            n++;
+        }
+        if (n == 5) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                five = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                five = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                five = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                five = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                five = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                five = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                five = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                five = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                five = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                five = 9;
+            }
+            n++;
+        }
+        if (n == 6) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                six = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                six = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                six = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                six = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                six = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                six = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                six = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                six = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                six = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                six = 9;
+            }
+            n++;
+        }
+        if (n == 7) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                seven = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                seven = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                seven = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                seven = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                seven = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                seven = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                seven = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                seven = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                seven = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                seven = 9;
+            }
+            n++;
+        }
+        if (n == 8) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                eight = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                eight = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                eight = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                eight = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                eight = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                eight = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                eight = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                eight = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                eight = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                eight = 9;
+            }
+            n++;
+        }
+        if (n == 9) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                nine1 = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                nine1 = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                nine1 = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                nine1 = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                nine1 = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                nine1 = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                nine1 = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                nine1 = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                nine1 = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                nine1 = 9;
+            }
+            n++;
+        }
+        if (n == 10) {
+            if (cpf.substring(n, n + 1).equals("0")) {
+                ten1 = 0;
+            } else if (cpf.substring(n, n + 1).equals("1")) {
+                ten1 = 1;
+            } else if (cpf.substring(n, n + 1).equals("2")) {
+                ten1 = 2;
+            } else if (cpf.substring(n, n + 1).equals("3")) {
+                ten1 = 3;
+            } else if (cpf.substring(n, n + 1).equals("4")) {
+                ten1 = 4;
+            } else if (cpf.substring(n, n + 1).equals("5")) {
+                ten1 = 5;
+            } else if (cpf.substring(n, n + 1).equals("6")) {
+                ten1 = 6;
+            } else if (cpf.substring(n, n + 1).equals("7")) {
+                ten1 = 7;
+            } else if (cpf.substring(n, n + 1).equals("8")) {
+                ten1 = 8;
+            } else if (cpf.substring(n, n + 1).equals("9")) {
+                ten1 = 9;
+            }
+            n++;
+            n = 9;
+        }else {
+            System.out.println("IT'S OVER");
+        }
+
+        if (i == 0) {
+            c--;
+            i++;
+            zero1 = zero * c;
+        }
+        if (i == 1) {
+            c--;
+            i++;
+            one1 = one * c;
+        }
+        if (i == 2) {
+            c--;
+            i++;
+            two1 = two * c;
+        }
+        if (i == 3) {
+            c--;
+            i++;
+            three1 = three * c;
+        }
+        if (i == 4) {
+            c--;
+            i++;
+            four1 = four * c;
+        }
+        if (i == 5) {
+            c--;
+            i++;
+            five1 = five * c;
+        }
+        if (i == 6) {
+            c--;
+            i++;
+            six1 = six * c;
+        }
+        if (i == 7) {
+            c--;
+            i++;
+            seven1 = seven * c;
+        }
+        if (i == 8) {
+            c--;
+            i++;
+            eight1 = eight * c;
+            c = 12;
+            i = 0;
+        }
+        //calculations to discover digit 1 of the CPF
+        Multi = zero1 + one1 + two1 + three1 + four1 + five1 + six1 + seven1 + eight1;
+        Divi = Multi % 11;
+
+        if (Divi == 1 || Divi == 0){
+            System.out.println("Yor first digit is ZERO, 0");
+        }else{
+            Digit1 = 11 - Divi;
+            System.out.println("Yor first digit is " + Digit1);
+        }
+        if (n == 9){
+            if (Digit1 == 0 || Digit1 == 1) {
+                nine = 0;
+            }  else if (Digit1 == 2) {
+                nine = 2;
+            }  else if (Digit1 == 3) {
+                nine = 3;
+            }  else if (Digit1 == 4) {
+                nine = 4;
+            }  else if (Digit1 == 5) {
+                nine = 5;
+            }  else if (Digit1 == 6) {
+                nine = 6;
+            }  else if (Digit1 == 7) {
+                nine = 7;
+            }  else if (Digit1 == 8) {
+                nine = 8;
+            }  else if (Digit1 == 9) {
+                nine = 9;
+            }
+            n++;
+        }
+
+        if (i == 0) {
+            c--;
+            i++;
+            zero = zero * c;
+        }
+        if (i == 1) {
+            c--;
+            i++;
+            one = one * c;
+        }
+        if (i == 2) {
+            c--;
+            i++;
+            two = two * c;
+        }
+        if (i == 3) {
+            c--;
+            i++;
+            three = three  * c;
+        }
+        if (i == 4) {
+            c--;
+            i++;
+            four = four * c;
+        }
+        if (i == 5) {
+            c--;
+            i++;
+            five = five * c;
+        }
+        if (i == 6) {
+            c--;
+            i++;
+            six = six * c;
+        }
+        if (i == 7) {
+            c--;
+            i++;
+            seven = seven * c;
+        }
+        if (i == 8) {
+            c--;
+            i++;
+            eight = eight * c;
+        }
+        if (i == 9) {
+            c--;
+            i++;
+            nine = nine * c;
+        }
+        //calculations to discover digit 2 of the CPF
+        Multi = zero + one + two + three  + four + five + six + seven + eight + nine;
+        Divi = Multi % 11;
+
+        if (Divi == 1 || Divi == 0){
+            System.out.println("Your second digit is ZERO, 0");
+        }else{
+            Digit2 = 11 - Divi;
+            System.out.println("Your second digit is " + Digit2);
+        }
+
+        if(Digit1 == nine1 && Digit2 == ten1){
+            System.out.println("Correct CPF");
+        }else{
+            System.out.println("Wrong CPF");
+        }
+    }
+}
