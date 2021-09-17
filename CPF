@@ -1,8 +1,6 @@
 package Hard;
 public class CPF {
-    
-    //teste
-    
+
     public static void main(String[] args) {
         //Fake CPF
         String cpf = ("12345678900");
